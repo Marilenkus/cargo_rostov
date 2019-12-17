@@ -6,6 +6,8 @@ $(document).ready(function () {
     });
 
     // Counter start
+    var windowHeight = $(window).height();
+    $(document).on('scroll', function() {
     (function ($) {
         $.fn.countTo = function (options) {
             options = options || {};
@@ -105,5 +107,5 @@ $(document).ready(function () {
         }
     });
 // Counter End
-
+    });
 });
