@@ -1,0 +1,345 @@
+/*******Fonts Start******/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Marmelad|Pattaya&display=swap');
+
+/*******Fonts End******/
+
+body{
+
+}
+
+section{
+    position: relative;
+}
+
+.wrapper{
+    margin: auto 0px;
+}
+
+
+.container{
+    /*position: relative;
+    height: 100%;*/
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+/*******Font Awesome Start******/
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*******Font Awesome Start******/
+
+/*******Header Start******/
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.container_top{
+    /*position: relative;
+    height: 100%;*/
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header_background{
+    background: rgba(68,68,68,.8);
+    min-width: 1000px;
+    height: 60px;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+}
+
+.header_background .logo_img{
+    background: url('/img/logo.svg') center center/contain no-repeat;
+    width: 159px;
+    height: 35px;
+    left: 20px;
+    top: 12px;
+    opacity: 1;
+    float: left;
+    border: none;
+    -webkit-transition: opacity .3s ease-out .3s,left 0s;
+    -moz-transition: opacity .3s ease-out .3s,left 0s;
+    -o-transition: opacity .3s ease-out .3s,left 0s;
+    transition: opacity .3s ease-out .3s,left 0s;
+    position: absolute;
+}
+
+.header_phone{
+    font-size: 24px;
+    -webkit-transition: font-size .3s ease-out 0s;
+    -moz-transition: font-size .3s ease-out 0s;
+    -o-transition: font-size .3s ease-out 0s;
+    transition: font-size .3s ease-out 0s;
+    position: relative;
+    float: right;
+    height: 60px;
+    margin-right: 20px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.header_phone:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_menu{
+    margin-left: 190px;
+    font-size: 15px;    
+    -webkit-transition: margin .3s ease-out 0s;
+    -moz-transition: margin .3s ease-out 0s;
+    -o-transition: margin .3s ease-out 0s;
+    transition: margin .3s ease-out 0s;
+    display: inline-block;
+}
+
+.header_menu-item{
+    margin-left: 0;
+    position: relative;
+    float: left;
+    transition: .3s;
+}
+
+.header_menu-link{
+    padding: 0 7px;
+    -webkit-transition: padding .3s ease-out 0s;
+    -moz-transition: padding .3s ease-out 0s;
+    -o-transition: padding .3s ease-out 0s;
+    transition: padding .3s ease-out 0s;
+    display: block;
+    border: none;
+    line-height: 60px;
+    color: #fff;
+}
+.header_menu-link:hover{
+    color: #e3414d;
+    text-decoration: none;
+}
+
+/*******Header End******/
+
+/*******Section Main Start******/
+
+.main{
+    background-image: url('/img/section_main_img.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    height: auto!important;
+    padding-bottom: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: left;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main_title{
+    font-size: 2rem;
+    margin: 0 0 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    color: #fff;
+}
+
+.main_description{
+    font-size: 1.4rem;
+    margin: 0 0 2.4rem;
+    line-height: 1.38;
+    max-width: 460px;
+    position: relative;
+    color: #fff;
+}
+
+.button{
+    font-size: 1.1rem;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 1px solid rgb(95, 6, 106);
+    background: rgba(189,40,127,1);
+    background: -moz-linear-gradient(left, rgba(189,40,127,1) 0%, rgba(93,59,165,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(189,40,127,1)), color-stop(100%, rgba(93,59,165,1)));
+    background: -webkit-linear-gradient(left, rgba(189,40,127,1) 0%, rgba(93,59,165,1) 100%);
+    background: -o-linear-gradient(left, rgba(189,40,127,1) 0%, rgba(93,59,165,1) 100%);
+    background: -ms-linear-gradient(left, rgba(189,40,127,1) 0%, rgba(93,59,165,1) 100%);
+    background: linear-gradient(to right, rgba(189,40,127,1) 0%, rgba(93,59,165,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd287f', endColorstr='#5d3ba5', GradientType=1 );
+    -webkit-box-shadow: 0px 0px 16px 3px rgba(125, 25, 126, 0.65), inset 0px 2px 0.9px 0.1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 16px 3px rgba(125, 25, 126, 0.65), inset 0px 2px 0.9px 0.1px rgba(255, 255, 255, 0.6);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.button:hover{
+    -webkit-box-shadow: 0px 0px 16px 3px rgba(175, 107, 176, 0.65), inset 0px 2px 0.9px 0.1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 16px 3px rgba(175, 107, 176, 0.65), inset 0px 2px 0.9px 0.1px rgba(255, 255, 255, 0.6);
+}
+
+/*******Section Main End******/
+
+/*******Section Works Start******/
+
+.works{
+    background-image: url('/img/section_works_img.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: darken;
+    height: auto!important;
+    padding-bottom: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: left;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.works_block{
+    height: 180px;
+    position: relative;
+    padding: 10px;
+    margin: 60px 0 20px 0;
+    background-color: rgba(68,68,68,0.5);
+    border: 1px solid #C5C5C5;
+    border-radius: 7px;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    text-align: center;
+}
+
+.works_block .icon {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 80px;
+    transform: translate(-50%, -50%); 
+}
+
+.works_block .icon i, .works_block .icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+    color: rgb(68,68,68);
+    /*width: 32px;
+    height: 32px;*/
+}
+
+.works_block .icon svg path {
+    stroke-width: 8px;
+    stroke: rgba(68, 68, 68, 0.5);
+    transition: stroke 300ms ease;       
+}
+.works_block .icon svg polygon {
+    fill: white; 
+}      
+.works_block h3 {
+    transition: all 0.7s ease 0s;
+    color: #fff;
+    font-size:20px;
+    margin:50px 0 10px 0;
+}    
+  
+.works_block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 10px 1px rgba(84, 84, 84, 0.5);         
+}
+.works_block:hover .icon svg path {
+    stroke: rgb(68,68,68); 
+} 
+
+.dotted{
+    flex-grow: 1;
+    margin: 0 5px;
+    height: 18px;
+    border-bottom: 1px dashed #a7a7a7;
+}
+
+.works_top{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 5px;
+    cursor: default;
+}
+
+.works_top h3{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 52px;
+    line-height: 0.7;
+    color:#fff;
+}
+
+.works_block h6{
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+/*******Section Works End******/
+
+/*******Section Clients Start*****/
+
+.clients{
+    background-color: rgba(45, 194, 253, 0.91);
+    height: auto!important;
+    padding-bottom: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: left;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.clients .fix{
+    text-align: center;
+}
+
+.qty h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #a53f23;
+}
+
+.qty h2{
+    font-size: 1.9rem;
+    font-family: Pattaya, sans-serif;
+    text-transform: lowercase;
+    color: #a53f23;
+    font-weight: lighter;
+}
+
+/*******Section Clients End*****/
+
+
+
