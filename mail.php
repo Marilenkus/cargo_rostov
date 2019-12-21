@@ -21,11 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
     $subject = "$formData";
-    $message = "$formData
-<b>Имя клиента:</b> $name
-<b>Телефон:</b> $phone
-<b>Сообщение:</b> $message_text";
-    $send = mail($to, $subject, $message, $headers);
+    // Формирование тела письма
+    $msg = "<html><body style='font-family:Arial,sans-serif;'>";
+    $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Заявка с сайта</h2>\r\n";
+    $msg .= "<p><strong>Имя:</strong> ".$name."</p>\r\n";
+    $msg .= "<p><strong>Телефон:</strong> ".$phone."</p>\r\n";
+    $msg .= "<p><strong>Сообщение:</strong> ".$message_text."</p>\r\n";
+    $msg .= "</body></html>";
+    $send = mail($to, $subject, $msg, $headers);
     if ($send == 'true') {
         echo '<center>Спасибо за отправку вашего сообщения! Мы свяжемся с Вами в бижайшее время</center>';
     } else {
@@ -35,3 +38,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     http_response_code(403);
     echo "Попробуйте еще раз";
 }
+?>

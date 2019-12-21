@@ -1,96 +1,97 @@
-@media screen and ( max-width: 991px )
-	nav
-		.header_background
-			height: 100px
-			.logo_img
-				order: 1
-			.header_menu
-				order: 3
-				line-height: 30px
-			.header_phone
-				font-size: 24px
-				order: 2
-				line-height: 60px
-	#clients
-		.clients_img
-			margin-top: 40%
-			transform: translateY(-50%)
-
-@media screen and ( max-width: 767px )
-	#works
-		.col-10
-			margin: 0 auto
-			.works_block
-				height: auto
-
-@media screen and ( max-width: 575px )
-	nav
-		.header_background
-			height: 85px!important
-			.row
-				flex-direction: column
-				align-items: center
+body	
+	@media only screen and ( max-width: 991px )
+		nav
+			.header_background
+				height: 100px
 				.logo_img
-					width: 100%
-					left: 0px
-					float: none
-					display: inline-table
-				.header_phone
-					font-size: 20px
-					font-weight: 600
-					text-align: center
-					margin-left: -20px
-					line-height: 70px
+					order: 1
 				.header_menu
-					flex-direction: column
-					background: rgba(68,68,68,0.8)
-					display: none
-				.active_menu
-					display: flex
-					margin-top: -11px
-					background: rgba(68,68,68,1)
-			.hamburger
-				display: block
-				position: absolute
-				right: 30px
-				top: 50%
+					order: 3
+					line-height: 30px
+				.header_phone
+					font-size: 24px
+					order: 2
+					line-height: 60px
+		#clients
+			.clients_img
+				margin-top: 40%
 				transform: translateY(-50%)
-				width: 26px
-				height: 12px
-				span 
-					display: block 
-					height: 2px
-					width: 100%
-					background-color: #fff 
-					margin-bottom: 5px
-					transition: 0.5s all
-			.active_hamburger 
-				display: block
-				span 
-					margin-bottom: -2px 
-					&:nth-child(1)
-						transform: translateY(3px) rotate(-45deg)
-					&:nth-child(2)
+
+	@media only screen and ( max-width: 767px )
+		#works
+			.col-10
+				margin: 0 auto
+				.works_block
+					height: auto
+
+	@media only screen and ( max-width: 575px )
+		nav
+			.active_header
+				background: transparent
+			.header_background
+				height: 85px
+				display: flex
+				justify-content: center
+				align-items: center
+				.row
+					.logo
+						.logo_img
+							max-height: 40px
+							margin-top: 20px
+							margin-left: -25px
+					.header_phone
+						font-size: 20px
+						font-weight: 600
+						text-align: center
+						margin-left: -20px
+					.header_menu
+						flex-direction: column
+						background: rgba(68,68,68,0.8)
 						display: none
-					&:nth-child(3)
-						transform: translateY(3px) rotate(45deg)
-		.active_header
-			background: rgba(68,68,68,1)
-	#about
-		width: 100%
-	#clients
-		padding: 80px 0 0
-		.fix
-			h2
-				font-size: 3rem
-			p
-				font-size: 1.5rem
-		.clients_img
-			margin-top: 50%;
-	#works
-		.col-10
-			margin: 0 auto
-			.works_block
-				height: auto
-		.works_top
-			padding: 80px 0 5px!important
+						line-height: 60px
+					.active_menu
+						display: flex
+						background: rgba(0, 0, 0, 0.8);
+				.hamburger
+					display: block
+					position: absolute
+					right: 30px
+					top: 50%
+					transform: translateY(-50%)
+					width: 26px
+					height: 12px
+					span 
+						display: block 
+						height: 2px
+						width: 100%
+						background-color: #fff 
+						margin-bottom: 5px
+						transition: 0.5s all
+				.active_hamburger 
+					display: block
+					span 
+						margin-bottom: -2px 
+						&:nth-child(1)
+							transform: translateY(3px) rotate(-45deg)
+						&:nth-child(2)
+							display: none
+						&:nth-child(3)
+							transform: translateY(3px) rotate(45deg)
+		#about
+			width: 100%
+		#clients
+			padding: 50px 0 0
+			.fix
+				h2
+					font-size: 3rem
+				p
+					font-size: 1.5rem
+			.clients_img
+				margin-top: 50%;
+		#works
+			.col-10
+				margin: 0 auto
+				.works_block
+					height: auto
+			.works_top
+				padding: 80px 0 5px
